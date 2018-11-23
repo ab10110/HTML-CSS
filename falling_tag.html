@@ -1,0 +1,73 @@
+<html>
+ <head> 
+ <style>
+body
+{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background:#800000;
+}
+.text
+{
+	position:absolute;
+	top:40px;
+	left:50px;
+	transform:translate(0%,0%);
+	animation:animate linear 1;
+	animation-duration:1s;
+	font-family:becker;
+	font-size:50px;
+	/*height:60px;
+	background:#000;*/
+	color:#fff;
+	z-index:1;
+}
+.tag
+{
+	position:absolute;
+	top:20px;
+	left:-20px;
+	transform:translate(0%,0%)rotate(45deg);
+	border:2px solid transparent;
+	border-left-color:#000;
+	border-top-color:#000;
+	border-right-color:#000;
+	border-bottom-color:#000;
+	width:100px;
+	height:25px;
+	border-radius:50%;
+	z-index:2;
+}
+@keyframes animate
+{
+	
+ from {
+    margin-left: 0%;
+	width:5px;
+  }
+
+  to {
+   
+    width: 10px;
+  }
+	0%
+	{ 
+		transform:translate(0%,0%) rotate(0deg);
+	}
+	100%
+	{
+		transform:translate(0%,0%) rotate(90deg);
+	}
+}
+ </style>
+	<meta charset="utf-8">
+	<title>Vishuda_tag</title>
+ </head>
+ <body>
+	<div class="text">
+		github
+	</div>
+	<div class="tag"></div>
+ </body> 
+</html>
